@@ -124,7 +124,7 @@ public:
             p =head[j].firstArc;
             while (p) {
                 j = p->AdjVex;
-                if (visited[j] ==false) {
+                if (!visited[j]) {
                     visited[j] =true;
                     cout <<" " << head[j].data;
                     GQ.push(j);
